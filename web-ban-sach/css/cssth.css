@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Dancing+Script:wght@700&family=Instrument+Serif&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@1,700&family=Nunito:wght@500&family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway&family=Rubik:ital,wght@1,500&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Dancing+Script:wght@700&family=Instrument+Serif&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nosifer&family=Noto+Serif:ital,wght@1,700&family=Nunito:wght@500&family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway&family=Rubik:ital,wght@1,500&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Dancing+Script:wght@500&family=Instrument+Serif&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nosifer&family=Noto+Serif:ital,wght@1,700&family=Nunito:wght@500&family=PT+Serif:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway&family=Rubik:ital,wght@1,500&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    position: relative;
+    color: #111;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+.header{
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    font-family: 'Dancing Script', cursive;
+}
+.banner{
+    width: 100%;
+    background-color: #fff;
+    height: 180px;
+}
+
+.banner .logo img{
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    
+}
+.product_navs{
+    display: flex;
+    height: 72px;
+    width: 1440px;
+    background-color:chocolate;
+    z-index: 999;
+    margin: auto;
+}
+.product_navs .menu{
+   line-height:50px
+}
+.product_navs .menu > li{
+    position: relative;
+}
+.product_navs .menu_list{
+    display: flex;
+}
+.product_navs .menu ul li{
+    list-style: none;
+    padding: 10px 40px;
+}
+.product_navs .menu ul li:hover{
+    background-color:#bf5937;
+}
+.product_navs .menu .menu_list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 5px;
+    width: 210px;
+}
+.product_navs .menu .menu_dropdow li a{
+    font-size: 14px;
+}
+.product_navs .menu .menu_dropdow li:hover{
+    background-color:chocolate;
+    color:rgb(70, 61, 54);
+}
+.product_navs .menu .menu_dropdow2 li a{
+    font-size: 14px;
+}
+.product_navs .menu .menu_dropdow2 li:hover{
+    background-color:chocolate;
+    color:rgb(70, 61, 54);
+}
+.menu_dropdow{
+    left: 248px;
+    position: absolute;
+    width: 300px;
+    border: 1px solid chocolate;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: none;
+    z-index: 10;
+    background-color: #bf5937;
+    height: auto;
+    top: 252.4px;
+    box-shadow: 8px 8px 8px rgba(255,255,255, 0.9);
+}
+.menu_dropdow2{
+    left: 487px;
+    position: absolute;
+    width: 300px;
+    border: 1px solid chocolate;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: none;
+    z-index: 10;
+    background-color: #bf5937;
+    height: auto;
+    top: 252.4px;
+    box-shadow: 8px 8px 8px rgba(255,255,255, 0.9);
+}
+.product_navs .menu .menu_list > li:hover .menu_dropdow{
+    display: block;
+}
+.product_navs .menu .menu_list > li:hover .menu_dropdow2{
+    display: block;
+}
+.banner .others{
+    position: relative;
+}
+.banner .others .other_search{
+    margin: 83px 30px;
+    position: absolute;
+    top: -150px;
+    right: 200px;
+}
+.banner .others .other_search input{
+    font-size: 22px;
+    outline: none;
+}
+.banner .others .other_search button{
+    font-size: 20px;
+    padding: 1.5px 6px;
+    color: #070606;
+    transition: 0.5s;
+}
+.banner .others .other_search button:hover{
+    background-color: chocolate;
+    color: #fff;
+    border: 1px solid #bf5937;
+    transform: scale(1.1);
+}
+::placeholder{
+    font-size: 14px;
+    padding: 3px 5px;
+}
+.banner .others .other_cart{
+    position: absolute;
+    top: -68px;
+    right: 140px;
+}
+
+.banner .others .other_cart i{
+    font-size: 32px;
+    transition: 0.4s;
+    
+}
+.banner .others .other_cart i:hover{
+    transform: scale(1.1);
+    background-color:chocolate;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 4px;
+
+
+}
+.banner .others .other_login{
+    position: absolute;
+    top: -70px;
+    right: 40px;
+    background-color: #98614f;
+    
+}
+.banner .others .other_login i{
+    font-size: 32px;
+    cursor: pointer;
+    color:#000;
+}
+.banner .others .other_login button{
+    font-size: 17px;
+    transition: 0.5s
+}
+.banner .others .other_login:hover button{
+    transform: scale(1.1);
+    background-color:chocolate;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 4px;
+    border: none;
+}
+
+.product_footer{
+    height: 300px;
+    width: 1440px;
+    background-color: #99999999;
+    position: relative;
+    margin: auto;
+}
+.product_footer .hotline{
+    position: absolute;
+    top: 20%;
+    left: 12.1%;
+    font-size: 25px;
+}
+.product_footer .hotline .hotline{
+    position: absolute;
+}
+.product_footer .hotline .tilte{
+    font-family: 'Nunito', sans-serif;
+}
+.product_footer .hotline .icon{
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    left: -3px;
+    cursor: pointer;
+}
+.product_footer .hotline .icon i{
+    color:chocolate;
+    transition: 0.5s;
+    
+}
+.product_footer .hotline .icon i:hover{
+    background-color:chocolate;
+    color: #fff;
+    transform: scale(1.1);
+}
+.product_footer .hotline .sdt i{
+    color: chocolate;
+    font-size: 15px;
+}
+.product_footer .hotline .sdt span{
+    font-size: 16px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+hr{ 
+    color: #fff;
+    margin-top: 15px;
+}
+.product_footer .introduce{
+    position: absolute;
+    right: 37%;
+    top: 20%;
+    font-size: 25px;
+}
+.product_footer .introduce .sdt{
+    font-size: 14px;
+    margin-top:15px;
+}
+.product_footer .introduce .sdt i{
+    color: chocolate;
+}
+.product_footer .introduce .sdt span{
+    color: #000;
+    
+}
+
+.product_footer .support{
+    position: absolute;
+    right: 13%;
+    top: 20%;
+    font-size: 25px;
+}
+.product_footer .support .sdt{
+    font-size: 14px;
+    margin-top:15px;
+}
+.product_footer .support .sdt i{
+    color: chocolate;
+}
+.product_footer .support .sdt span{
+    color: #000;
+}
+
+/*---------------MAIN----------------*/
+
+
+/* Main-content */
+
+#wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 1.15;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0;
+}
+.product-headthumb{
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+.product-headthumb a{
+    border: 1px solid #9999;
+    padding: 5px 7px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #666;
+    border-radius: 5px;
+}
+.product-headthumb a:nth-child(2){
+    margin-left: 30px;
+}
+.product-headthumb a:nth-child(3){
+    margin-left: 30px;
+}
+.product-headthumb a:nth-child(4){
+    margin-left: 30px;
+}
+.product-headthumb a:hover {
+    background-color: chocolate;
+    color: #fff;
+    text-decoration: none;
+}
+h3{
+    font-size:18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 600;
+}
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+ul.products:hover li{
+    box-shadow: rgba(255,255,255,0.4) 0px 7px 29px 0px;
+}
+ul.products li{
+    flex-basis: 23%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: 1px;
+    border: 1px solid #9999;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+
+}
+ul.products li .product-top a.buy-now{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: chocolate;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover  a.buy-now{
+    bottom: 0px;
+}
+ul.products li .product-info{
+    padding: 10px 0;
+}
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a .product-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0;
+}
+ul.products li .product-info a .product-name{
+    color: #334862;
+    padding: 3px 0;
+}
+ul.products li .product-info a .product-price{
+    color: #111;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+/*--------page--------*/
